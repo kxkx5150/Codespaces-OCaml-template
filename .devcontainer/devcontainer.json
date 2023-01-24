@@ -1,10 +1,10 @@
 {
 	"name": "OCaml OPAM",
 	"build": {
-		"dockerfile": "Dockerfile",
-		"args": {  }
+		"dockerfile": "Dockerfile"
 	},
-	"settings": {},
+	"workspaceMount": "source=${localWorkspaceFolder}/,target=/home/vscode/workspace,type=bind",
+	"workspaceFolder": "/home/vscode/workspace", 
 	"extensions": [
 		"ocamllabs.ocaml-platform"
 	],
@@ -44,5 +44,5 @@
 		"-v",
 		"/etc/machine-id:/etc/machine-id"
 	],
-	"remoteUser": "opam"
+	"remoteUser": "vscode"
 }
